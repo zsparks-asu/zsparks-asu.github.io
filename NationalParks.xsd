@@ -1,61 +1,52 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="http://tempuri.org/NationalParks.xsd"
     elementFormDefault="qualified"
     xmlns="http://tempuri.org/NationalParks.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
 
-	<!-- Root element: holds multiple parks -->
-	<xs:element name="NationalParks">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="NationalPark" type="parkType" minOccurs="1" maxOccurs="unbounded"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+  <xs:element name="NationalParks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NationalPark" type="parkType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 
-	<!-- Park type definition -->
-	<xs:complexType name="parkType">
-		<xs:sequence>
+  <xs:complexType name="parkType">
+    <xs:sequence>
 
-			<!-- Phone: required, multiple entries allowed -->
-			<xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
 
-			<!-- Address: required, exactly once -->
-			<xs:element name="Address" type="addressType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
 
-		</xs:sequence>
+      <xs:element name="Address" type="addressType" minOccurs="1" maxOccurs="1"/>
 
-		<!-- Name: required attribute -->
-		<xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:sequence>
 
-		<!-- Rating: optional attribute (note the @ in JSON indicates attribute) -->
-		<xs:attribute name="Rating" type="ratingType" use="optional"/>
+    <xs:attribute name="Rating" type="ratingType" use="optional"/>
 
-	</xs:complexType>
+  </xs:complexType>
 
-	<!-- Address type definition -->
-	<xs:complexType name="addressType">
-		<xs:sequence>
-			<xs:element name="Number"  type="xs:string"/>
-			<xs:element name="Street"  type="xs:string"/>
-			<xs:element name="City"    type="xs:string"/>
-			<xs:element name="State"   type="xs:string"/>
-			<xs:element name="Zip"     type="xs:string"/>
-		</xs:sequence>
+  <xs:complexType name="addressType">
+    <xs:sequence>
+      <xs:element name="Number"  type="xs:string"/>
+      <xs:element name="Street"  type="xs:string"/>
+      <xs:element name="City"    type="xs:string"/>
+      <xs:element name="State"   type="xs:string"/>
+      <xs:element name="Zip"     type="xs:string"/>
+    </xs:sequence>
 
-		<!-- NearestAirport: optional attribute (note the @ in JSON indicates attribute) -->
-		<xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
+    <xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
 
-	</xs:complexType>
+  </xs:complexType>
 
-	<!-- Rating: restricted to 1.0 - 5.0 with one decimal -->
-	<xs:simpleType name="ratingType">
-		<xs:restriction base="xs:decimal">
-			<xs:minInclusive value="1.0"/>
-			<xs:maxInclusive value="5.0"/>
-			<xs:fractionDigits value="1"/>
-		</xs:restriction>
-	</xs:simpleType>
+  <xs:simpleType name="ratingType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="1.0"/>
+      <xs:maxInclusive value="5.0"/>
+      <xs:fractionDigits value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
 
 </xs:schema>
