@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <NationalParks xmlns="http://tempuri.org/NationalParks.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="http://tempuri.org/NationalParks.xsd NationalParks.xsd">
 
-	<NationalPark Name="Grand Canyon" Rating="4.9">
+	<NationalPark Rating="4.9">
+		<Name>Grand Canyon</Name>
 		<Phone>928-638-7496</Phone>
 		<Phone>888-297-2757</Phone>
 		<Phone>866-499-2574</Phone>
@@ -16,7 +17,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Yellowstone">
+	<NationalPark>
+		<Name>Yellowstone</Name>
 		<Phone>307-344-7381</Phone>
 		<Address NearestAirport="Bozeman">
 			<Number>114</Number>
@@ -27,7 +29,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Yosemite" Rating="4.8">
+	<NationalPark Rating="4.8">
+		<Name>Yosemite</Name>
 		<Phone>209-372-0200</Phone>
 		<Address NearestAirport="Fresno">
 			<Number>9035</Number>
@@ -38,7 +41,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Saguaro">
+	<NationalPark>
+		<Name>Saguaro</Name>
 		<Phone>520-733-5153</Phone>
 		<Address NearestAirport="Tuscon">
 			<Number>2700</Number>
@@ -49,7 +53,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Petried Forrest" Rating="4.7">
+	<NationalPark Rating="4.7">
+		<Name>Petried Forrest</Name>
 		<Phone>928-524-6228</Phone>
 		<Address NearestAirport="Tuscon">
 			<Number>1</Number>
@@ -60,7 +65,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Zion" Rating="4.7">
+	<NationalPark Rating="4.7">
+		<Name>Zion</Name>
 		<Phone>435-772-3256</Phone>
 		<Address NearestAirport="St. George Regional Airport">
 			<Number>1</Number>
@@ -71,7 +77,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Badlands" Rating="4.9">
+	<NationalPark Rating="4.9">
+		<Name>Badlands</Name>
 		<Phone>605-433-5361</Phone>
 		<Address NearestAirport="Rapid City">
 			<Number>25216</Number>
@@ -82,7 +89,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Great Sand Dunes">
+	<NationalPark>
+		<Name>Great Sand Dunes</Name>
 		<Phone>719-378-6395</Phone>
 		<Address NearestAirport="Alamosa">
 			<Number>11999</Number>
@@ -93,7 +101,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Hot Springs" Rating="4.5">
+	<NationalPark Rating="4.5">
+		<Name>Hot Springs</Name>
 		<Phone>501-321-6750</Phone>
 		<Address NearestAirport="Memorial Field">
 			<Number>101</Number>
@@ -104,7 +113,8 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Acadia" Rating="4.9">
+	<NationalPark Rating="4.9">
+		<Name>Acadia</Name>
 		<Phone>207-288-3338</Phone>
 		<Address NearestAirport="Trenton">
 			<Number>25</Number>
@@ -114,5 +124,5 @@
 			<Zip>04609</Zip>
 		</Address>
 	</NationalPark>
-	
+
 </NationalParks>
