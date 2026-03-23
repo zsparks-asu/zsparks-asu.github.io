@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- Root element is "NationalPark" instead of "NationalParks" -->
+<?xml version="1.0" encoding="UTF-8"?>
 <NationalPark xmlns="http://tempuri.org/NationalParks.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://tempuri.org/NationalParks.xsd NationalParks.xsd">
+               xsi:schemaLocation="http://tempuri.org/NationalParks.xsd https://zwsparks-asu.github.io/NationalParks.xsd">
 
-	<!-- Required attribute "Name" is missing -->
 	<NationalPark Rating="4.9">
+		<Name>Grand Canyon</Name>
 		<Phone>928-638-7496</Phone>
 		<Phone>888-297-2757</Phone>
 		<Phone>866-499-2574</Phone>
@@ -18,8 +17,10 @@
 		</Address>
 	</NationalPark>
 
-	<!-- Phone element is missing -->
-	<NationalPark Name="Yellowstone">
+	<NationalPark>
+		<Name>Yellowstone</Name>
+		<Phone>307-344-7381</Phone>
+		<Phone>307-344-2107</Phone>
 		<Address NearestAirport="Bozeman">
 			<Number>114</Number>
 			<Street>Albright Ave</Street>
@@ -29,42 +30,46 @@
 		</Address>
 	</NationalPark>
 
-	<!-- Address element has no closing tag -->
-	<NationalPark Name="Yosemite" Rating="4.8">
-		<Phone>209-372-0200</Phone>
+	<NationalPark Rating="4.8">
+		<Name>Yosemite</Name>
 		<Address NearestAirport="Fresno">
 			<Number>9035</Number>
 			<Street>Village Dr</Street>
 			<City>Yosemite National Park</City>
 			<State>CA</State>
 			<Zip>95389</Zip>
-		</NationalPark>
+		</Address>
+	</NationalPark>
 
-	<NationalPark Name="Saguaro">
+	<NationalPark>
+		<Name>Saguaro</Name>
 		<Phone>520-733-5153</Phone>
-		<Address NearestAirport="Tuscon">
+		<Phone>520-733-5158</Phone>
+		<Address>
 			<Number>2700</Number>
 			<Street>N Kinney Rd</Street>
-			<City>Tuscon</City>
+			<City>Tucson</City>
 			<State>AZ</State>
 			<Zip>85743</Zip>
 		</Address>
 	</NationalPark>
 
-	<!-- Two Name attributes provided for one park -->
-	<NationalPark Name="Petrified Forest" Name="Petried Forrest Copy" Rating="4.7">
+	<NationalPark Rating="4.7">
+		<Name>Petrified Forest</Name>
 		<Phone>928-524-6228</Phone>
-		<Address NearestAirport="Tuscon">
+		<Address NearestAirport="Flagstaff">
 			<Number>1</Number>
 			<Street>Park Rd</Street>
-			<City>Petrified Forrest</City>
+			<City>Petrified Forest</City>
 			<State>AZ</State>
 			<Zip>86028</Zip>
-		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Zion" Rating="4.7">
+	<NationalPark Rating="4.7">
+		<Name>Zion</Name>
+		<Name>Zion National Park</Name>
 		<Phone>435-772-3256</Phone>
+		<Phone>435-772-3264</Phone>
 		<Address NearestAirport="St. George Regional Airport">
 			<Number>1</Number>
 			<Street>Zion Park Blvd</Street>
@@ -74,9 +79,10 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Badlands" Rating="4.9">
+	<NationalPark Rating="4.9">
+		<Name>Badlands</Name>
 		<Phone>605-433-5361</Phone>
-		<Address NearestAirport="Rapid City">
+		<Address NearestAirport="Rapid City Regional Airport">
 			<Number>25216</Number>
 			<Street>Ben Reifel Rd</Street>
 			<City>Interior</City>
@@ -85,9 +91,11 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Great Sand Dunes">
+	<NationalPark>
+		<Name>Great Sand Dunes</Name>
 		<Phone>719-378-6395</Phone>
-		<Address NearestAirport="Alamosa">
+		<Phone>719-378-6399</Phone>
+		<Address NearestAirport="Alamosa Regional Airport">
 			<Number>11999</Number>
 			<Street>State Highway 150</Street>
 			<City>Mosca</City>
@@ -96,9 +104,10 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Hot Springs" Rating="4.5">
+	<NationalPark Rating="4.5">
+		<Name>Hot Springs</Name>
 		<Phone>501-321-6750</Phone>
-		<Address NearestAirport="Memorial Field">
+		<Address NearestAirport="Memorial Field Airport">
 			<Number>101</Number>
 			<Street>Reserve St</Street>
 			<City>Hot Springs</City>
@@ -107,9 +116,11 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Name="Acadia" Rating="4.9">
+	<NationalPark Rating="4.9">
+		<Name>Acadia</Name>
 		<Phone>207-288-3338</Phone>
-		<Address NearestAirport="Trenton">
+		<Phone>207-288-3339</Phone>
+		<Address NearestAirport="Trenton Airport">
 			<Number>25</Number>
 			<Street>McFarland Hill Dr</Street>
 			<City>Bar Harbor</City>
